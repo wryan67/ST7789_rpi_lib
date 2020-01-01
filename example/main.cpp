@@ -55,7 +55,6 @@ void frame(int frameCount) {
     if (lastSecond < 0) lastSecond = second;
 
     if (lastSecond != second) {
-        printf("fps=%d\n", fps); fflush(stdout);
         lastFPS = fps;
         fps = 0;
         lastSecond = second;
@@ -90,7 +89,6 @@ void frame(int frameCount) {
 
     int midY = minY + (maxY - minY) / 2;
 
-    printf("maxx=%d maxy=%d\n", 1+maxX - minX, 1+maxY - minY);
 
     Paint_DrawLine(minX, minY,    maxX, minY, WHITE, LINE_STYLE_SOLID, DOT_PIXEL_1X1);  //top
     Paint_DrawLine(minX, maxY,    maxX, maxY, WHITE, LINE_STYLE_SOLID, DOT_PIXEL_1X1);
