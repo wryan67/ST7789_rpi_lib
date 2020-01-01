@@ -32,9 +32,18 @@
 
 #include "DEV_Config.h"
 
+// wave share 1
 #define LCD_WIDTH   240 //LCD width
 #define LCD_HEIGHT  320 //LCD height
 
+
+// wave share 2
+//#define LCD_WIDTH   128 //LCD width  128
+//#define LCD_HEIGHT  128 //LCD height 128
+
+// weird display
+//#define LCD_WIDTH   131 //LCD width  128
+//#define LCD_HEIGHT  161 //LCD height 160
 
 
 #ifdef __cplusplus

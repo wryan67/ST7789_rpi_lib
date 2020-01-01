@@ -154,10 +154,19 @@ void GPIO_Config(void)
 {
     int Equipment = DEV_Equipment_Testing();
     if(Equipment=='R'){
-        DEV_DC_PIN  = 22;//   6=bcm   wpi=22
+
+// wave share Display 1
         DEV_CS_PIN  = 21;//   5=bcm   wpi=21
+        DEV_DC_PIN  = 22;//   6=bcm   wpi=22
         DEV_RST_PIN = 23;//   13=bcm  wpi=23
-        DEV_BL_PIN  = 24;//   19=bcm  wpi=24
+        DEV_BL_PIN  = 7; //    4=bcm  wpi=7
+
+// wave share Display 2
+//        DEV_CS_PIN   = 24;
+//        DEV_DC_PIN   = 25;
+//        DEV_RST_PIN  = 29;
+//        DEV_BL_PIN   = 7; 
+
     } else if(Equipment=='J'){
         #if USE_DEV_LIB
 		DEV_RST_PIN = GPIO27;//

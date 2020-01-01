@@ -40,10 +40,10 @@ extern "C"
 {
 #endif  
 
-extern int DEV_RST_PIN;//27
-extern int DEV_DC_PIN;//25
-extern int DEV_CS_PIN;//8
-extern int DEV_BL_PIN;//18
+extern int DEV_RST_PIN;
+extern int DEV_DC_PIN;
+extern int DEV_CS_PIN;
+extern int DEV_BL_PIN;
 
 /*------------------------------------------------------------------------------------------------------*/
 //uint8_t DEV_ModuleInit(void);
